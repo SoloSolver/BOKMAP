@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOKMAP - Home Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!--    <link rel="stylesheet" href="../static/assets/css/style.css">-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">BOK<span>MAP</span></a>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="hname" id="room1">Home</a>
+            <a href="#services" class="serv3" id="techno">Services</a>
+            <a href="#about" class="section" id="abt4">About Us</a>
+            <a href="#contact" class="cnt" id="info">Contact</a>
+            <a href="#" id="cartBtn">
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </a>
+        </div>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Your Trusted Home Service Partner</h1>
+        <p>Book professional home services with ease. Quality, reliability, and convenience at your fingertips.</p>
+        <div class="hero-btns">
+            <a href="#services" class="btn">Our Services</a>
+            <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of professional home services to meet all your needs</p>
+        </div>
+        
+        <div class="services-container">
+            <!-- Cleaning -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1600494603989-9650cf6ddd3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Cleaning Service">
+                </div>
+                <div class="service-content">
+                    <h3>Professional Cleaning</h3>
+                    <p>Thorough cleaning services for your home or office</p>
+                    <span class="service-price">$50-$150</span>
+                    <button class="add-to-cart" data-service="Professional Cleaning" data-price="50">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Plumbing -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Plumbing Service">
+                </div>
+                <div class="service-content">
+                    <h3>Plumbing Services</h3>
+                    <p>Fix leaks, install fixtures, and solve plumbing issues</p>
+                    <span class="service-price">$75-$300</span>
+                    <button class="add-to-cart" data-service="Plumbing Services" data-price="75">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Carpentry -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2158&q=80" alt="Carpentry Service">
+                </div>
+                <div class="service-content">
+                    <h3>Carpentry Work</h3>
+                    <p>Custom furniture, repairs, and woodworking solutions</p>
+                    <span class="service-price">$100-$500</span>
+                    <button class="add-to-cart" data-service="Carpentry Work" data-price="100">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Appliance Repair -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Appliance Repair">
+                </div>
+                <div class="service-content">
+                    <h3>Appliance Repair</h3>
+                    <p>Fix your home appliances quickly and efficiently</p>
+                    <span class="service-price">$80-$250</span>
+                    <button class="add-to-cart" data-service="Appliance Repair" data-price="80">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Pest Control -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src= https://img.freepik.com/premium-photo/worker-white-sterile-uniform-with-rubber-gloves-mask-holding-sprayer-with-disinfectant-sterilizing-informatics-cabinet-school_232070-9698.jpg?semtais_hybrid&w740 alt="Pest Control">
+                </div>
+                <div class="service-content">
+                    <h3>Pest Control</h3>
+                    <p>Effective solutions for pest elimination and prevention</p>
+                    <span class="service-price">$120-$350</span>
+                    <button class="add-to-cart" data-service="Pest Control" data-price="120">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Painting -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Painting Service">
+                </div>
+                <div class="service-content">
+                    <h3>Painting Services</h3>
+                    <p>Interior and exterior painting for your property</p>
+                    <span class="service-price">$200-$800</span>
+                    <button class="add-to-cart" data-service="Painting Services" data-price="200">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Moving & Packing -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Moving Service">
+                </div>
+                <div class="service-content">
+                    <h3>Moving & Packing</h3>
+                    <p>Stress-free relocation services for homes and offices</p>
+                    <span class="service-price">$300-$1000</span>
+                    <button class="add-to-cart" data-service="Moving & Packing" data-price="300">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+            
+            <!-- AC Servicing -->
+            <div class="service-card">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="AC Servicing">
+                </div>
+                <div class="service-content">
+                    <h3>AC Servicing</h3>
+                    <p>Installation, maintenance, and repair of AC units</p>
+                    <span class="service-price">$100-$400</span>
+                    <button class="add-to-cart" data-service="AC Servicing" data-price="100">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                <!-- refrigerator Servicing
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://acservice299.com/wp-content/uploads/2024/12/refrigerators-Service-1.jpg" alt="refrigerator Servicing">
+                    </div>
+                    <div class="service-content">
+                        <h3>RefrigeratorServicing</h3>
+                        <p>Installation, maintenance, and repair of refrigerator parts</p>
+                        <span class="service-price">$100-$400</span>
+                        <button class="add-to-cart" data-service="refrigerator Servicing" data-price="100">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About BOKMAP</h2>
+                <p>Learn more about our company and what makes us different</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2020, BOKMAP has quickly become a trusted name in home services. We started with a simple mission: to make home maintenance and improvement easy, reliable, and accessible for everyone.</p>
+                    <p>Our team of skilled professionals is dedicated to providing top-quality services with a customer-first approach. We carefully vet all our service providers to ensure you receive the best experience possible.</p>
+                    <p>With thousands of satisfied customers and growing, we're proud to be your go-to solution for all home service needs.</p>
+                    <a href="#contact" class="btn">Get in Touch</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="BOKMAP Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: var(--dark-color);">Contact Us</h2>
+                <p style="color: var(--text-color);">Have questions or need to book a service? Reach out to us!</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Service Lane, Cityville, ST 12345</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> contact@bokmap.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 6:00 PM</p>
+                    <p><i class="fas fa-clock"></i> Sat-Sun: 9:00 AM - 4:00 PM</p>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <select required>
+                            <option value="">Select a Service</option>
+                            <option>Cleaning</option>
+                            <option>Plumbing</option>
+                            <option>Carpentry</option>
+                            <option>Appliance Repair</option>
+                            <option>Pest Control</option>
+                            <option>Painting</option>
+                            <option>Moving & Packing</option>
+                            <option>AC Servicing</option>
+                        </select>
+                        <textarea placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@bokmap?si=fPeI-jukwuMTbu-g"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        
+        <p>&copy; 2025 BOKMAP. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <span class="close-cart" id="closeCart">&times;</span>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here dynamically -->
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-total">
+            <h4>Total: $<span id="cartTotal">0</span></h4>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // Cart Functionality
+        const cartBtn = document.getElementById('cartBtn');
+        const cartModal = document.getElementById('cartModal');
+        const closeCart = document.getElementById('closeCart');
+        const overlay = document.getElementById('overlay');
+        const cartItemsContainer = document.getElementById('cartItems');
+        const cartTotal = document.getElementById('cartTotal');
+        const cartCount = document.querySelector('.cart-count');
+        
+        let cart = [];
+        
+        // Toggle Cart Modal
+        cartBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            cartModal.classList.add('active');
+            overlay.classList.add('active');
+        });
+        
+        closeCart.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+        
+        overlay.addEventListener('click', () => {
+            cartModal.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+        
+        // Add to Cart
+        const addToCartBtns = document.querySelectorAll('.add-to-cart');
+        
+        addToCartBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const service = btn.getAttribute('data-service');
+                const price = parseFloat(btn.getAttribute('data-price'));
+                
+                // Add item to cart
+                cart.push({ service, price });
+                updateCart();
+                
+                // Show confirmation
+                btn.innerHTML = '<i class="fas fa-check"></i> Added';
+                setTimeout(() => {
+                    btn.innerHTML = '<i class="fas fa-cart-plus"></i> Add to Cart';
+                }, 1500);
+            });
+        });
+        
+        // Update Cart
+        function updateCart() {
+            // Update cart count
+            cartCount.textContent = cart.length;
+            
+            // Update cart items
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+                cartTotal.textContent = '0';
+                return;
+            }
+            
+            cartItemsContainer.innerHTML = '';
+            let total = 0;
+            
+            cart.forEach((item, index) => {
+                total += item.price;
+                
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <div class="cart-item-img">
+                        <img src="https://via.placeholder.com/80" alt="${item.service}">
+                    </div>
+                    <div class="cart-item-details">
+                        <h4>${item.service}</h4>
+                        <div class="cart-item-price">$${item.price}</div>
+                        <div class="cart-item-remove" data-index="${index}">Remove</div>
+                    </div>
+                `;
+                
+                cartItemsContainer.appendChild(cartItem);
+            });
+            
+            // Add remove functionality
+            document.querySelectorAll('.cart-item-remove').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const index = parseInt(btn.getAttribute('data-index'));
+                    cart.splice(index, 1);
+                    updateCart();
+                });
+            });
+            
+            // Update total
+            cartTotal.textContent = total.toFixed(2);
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
